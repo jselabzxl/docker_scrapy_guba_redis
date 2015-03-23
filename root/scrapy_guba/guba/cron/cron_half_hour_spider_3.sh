@@ -1,0 +1,12 @@
+cd $PWD/../../
+
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=801 -a max_idx=840 --loglevel=INFO --logfile=1.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=841 -a max_idx=880 --loglevel=INFO --logfile=2.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=881 -a max_idx=920 --loglevel=INFO --logfile=3.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=921 -a max_idx=960 --loglevel=INFO --logfile=4.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=961 -a max_idx=1000 --loglevel=INFO --logfile=5.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=1001 -a max_idx=1040 --loglevel=INFO --logfile=6.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=1041 -a max_idx=1080 --loglevel=INFO --logfile=7.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=1081 -a max_idx=1120 --loglevel=INFO --logfile=8.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=1121 -a max_idx=1160 --loglevel=INFO --logfile=9.log & 
+nohup ./program >/dev/null 2>&1 & scrapy crawl guba_stock_spider -a begin_date="$(date "+%Y-%m-%d %H:%M:%S" -d '-16 minutes')" -a end_date="$(date "+%Y-%m-%d %H:%M:%S")" -a since_idx=1161 -a max_idx=1200 --loglevel=INFO --logfile=10.log & 
