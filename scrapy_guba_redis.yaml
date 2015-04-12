@@ -60,7 +60,7 @@ services:
     image: logstash-forwarder:0.1.0
     requires: [ logstash ]
     instances:
-      forwarder:
+      forwarder_91:
         ship: vm91
         volumes: 
           /opt/conf: /home/docker/logstash-forwarder-dockerfile/conf-example
@@ -72,20 +72,20 @@ services:
     image: scrapy_guba_redis:0.1.0
     requires: [ forwarder_91 ]
     instances:
-      scrapy_guba_redis_list:
+      scrapy_guba_redis_list_91:
         ship: vm91
-        volumes_from: [forwarder]
+        volumes_from: [forwarder_91]
         command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
-      scrapy_guba_redis_detail:
+      scrapy_guba_redis_detail_91:
         ship: vm91
-        volumes_from: [forwarder]
+        volumes_from: [forwarder_91]
         command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
 
   forwarder_92:
     image: logstash-forwarder:0.1.0
     requires: [ logstash ]
     instances:
-      forwarder:
+      forwarder_92:
         ship: vm92
         volumes: 
           /opt/conf: /home/docker/logstash-forwarder-dockerfile/conf-example
@@ -97,20 +97,20 @@ services:
     image: scrapy_guba_redis:0.1.0
     requires: [ forwarder_92 ]
     instances:
-      scrapy_guba_redis_list:
+      scrapy_guba_redis_list_92:
         ship: vm92
-        volumes_from: [forwarder]
+        volumes_from: [forwarder_92]
         command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
-      scrapy_guba_redis_detail:
+      scrapy_guba_redis_detail_92:
         ship: vm92
-        volumes_from: [forwarder]
+        volumes_from: [forwarder_92]
         command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
 
   forwarder_93:
     image: logstash-forwarder:0.1.0
     requires: [ logstash ]
     instances:
-      forwarder:
+      forwarder_93:
         ship: vm93
         volumes: 
           /opt/conf: /home/docker/logstash-forwarder-dockerfile/conf-example
@@ -122,11 +122,11 @@ services:
     image: scrapy_guba_redis:0.1.0
     requires: [ forwarder_93 ]
     instances:
-      scrapy_guba_redis_list:
+      scrapy_guba_redis_list_93:
         ship: vm93
-        volumes_from: [forwarder]
+        volumes_from: [forwarder_93]
         command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
-      scrapy_guba_redis_detail:
+      scrapy_guba_redis_detail_93:
         ship: vm93
-        volumes_from: [forwarder]
+        volumes_from: [forwarder_93]
         command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
