@@ -1,0 +1,132 @@
+name: test
+
+ships:
+  vm91: {ip: 219.224.135.91, docker_port: 2375}
+  vm92: {ip: 219.224.135.92, docker_port: 2375}
+  vm93: {ip: 219.224.135.93, docker_port: 2375}
+
+services:
+  elasticsearch:
+    image: denibertovic/elasticsearch
+    instances:
+      elasticsearch:
+        ship: vm91
+        volumes: 
+          /opt/elasticsearch/config: /home/docker/elasticsearch-dockerfile/config-example
+          /var/log/elasticsearch_log_for_scrapy_log: /var/log/elasticsearch_log_for_scrapy_log
+          /var/lib/elasticsearch_data_for_scrapy_log: /var/lib/elasticsearch_data_for_scrapy_log
+        ports:
+          es1:
+            exposed: 9200
+            external: 9200
+          es2:
+            exposed: 9300
+            external: 9300
+
+  kibana:
+    image: denibertovic/kibana
+    requires: [ elasticsearch ]
+    instances:
+      kibana:
+        ship: vm91
+        volumes: 
+          /logs: /tmp/logs
+          /kibana/config: /home/docker/kibana-dockerfile/config-example
+        ports:
+          kb1:
+            exposed: 5601
+            external: 5601
+
+  logstash:
+    image: denibertovic/logstash
+    requires: [ elasticsearch, kibana ]
+    instances:
+      logstash:
+        ship: vm91
+        links:
+          elasticsearch: elasticsearch
+        volumes: 
+          /opt/conf: /home/docker/logstash-dockerfile/conf-example
+          /opt/certs: /home/docker/logstash-dockerfile/certs
+        ports:
+          ls1:
+            exposed: 5043
+            external: 5043
+          ls2:
+            exposed: 514
+            external: 514
+
+  forwarder_91:
+    image: logstash-forwarder:0.1.0
+    requires: [ logstash ]
+    instances:
+      forwarder:
+        ship: vm91
+        volumes: 
+          /opt/conf: /home/docker/logstash-forwarder-dockerfile/conf-example
+          /opt/certs: /home/docker/logstash-forwarder-dockerfile/certs
+        container_volumes:
+          - /tmp/feeds
+  
+  scrapy_91:
+    image: scrapy_guba_redis:0.1.0
+    requires: [ forwarder_91 ]
+    instances:
+      scrapy_guba_redis_list:
+        ship: vm91
+        volumes_from: [forwarder]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_detail:
+        ship: vm91
+        volumes_from: [forwarder]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+
+  forwarder_92:
+    image: logstash-forwarder:0.1.0
+    requires: [ logstash ]
+    instances:
+      forwarder:
+        ship: vm92
+        volumes: 
+          /opt/conf: /home/docker/logstash-forwarder-dockerfile/conf-example
+          /opt/certs: /home/docker/logstash-forwarder-dockerfile/certs
+        container_volumes:
+          - /tmp/feeds
+  
+  scrapy_92:
+    image: scrapy_guba_redis:0.1.0
+    requires: [ forwarder_92 ]
+    instances:
+      scrapy_guba_redis_list:
+        ship: vm92
+        volumes_from: [forwarder]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_detail:
+        ship: vm92
+        volumes_from: [forwarder]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+
+  forwarder_93:
+    image: logstash-forwarder:0.1.0
+    requires: [ logstash ]
+    instances:
+      forwarder:
+        ship: vm93
+        volumes: 
+          /opt/conf: /home/docker/logstash-forwarder-dockerfile/conf-example
+          /opt/certs: /home/docker/logstash-forwarder-dockerfile/certs
+        container_volumes:
+          - /tmp/feeds
+  
+  scrapy_93:
+    image: scrapy_guba_redis:0.1.0
+    requires: [ forwarder_93 ]
+    instances:
+      scrapy_guba_redis_list:
+        ship: vm93
+        volumes_from: [forwarder]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_detail:
+        ship: vm93
+        volumes_from: [forwarder]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
