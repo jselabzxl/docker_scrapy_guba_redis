@@ -76,7 +76,119 @@ services:
         ship: vm91
         volumes_from: [forwarder_91]
         command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_1:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_2:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_3:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_4:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_5:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_6:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_7:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_8:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_91_9:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
       scrapy_guba_redis_detail_91:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_1:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_2:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_3:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_4:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_5:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_6:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_7:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_8:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_9:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_10:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_11:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_12:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_13:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_14:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_15:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_16:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_17:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_18:
+        ship: vm91
+        volumes_from: [forwarder_91]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_91_19:
         ship: vm91
         volumes_from: [forwarder_91]
         command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
@@ -101,7 +213,119 @@ services:
         ship: vm92
         volumes_from: [forwarder_92]
         command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_1:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_2:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_3:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_4:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_5:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_6:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_7:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_8:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_92_9:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
       scrapy_guba_redis_detail_92:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_1:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_2:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_3:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_4:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_5:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_6:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_7:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_8:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_9:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_10:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_11:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_12:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_13:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_14:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_15:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_16:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_17:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_18:
+        ship: vm92
+        volumes_from: [forwarder_92]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_92_19:
         ship: vm92
         volumes_from: [forwarder_92]
         command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
@@ -126,7 +350,119 @@ services:
         ship: vm93
         volumes_from: [forwarder_93]
         command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_1:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_2:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_3:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_4:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_5:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_6:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_7:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_8:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
+      scrapy_guba_redis_list_93_9:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_list_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/list.log"
       scrapy_guba_redis_detail_93:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_1:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_2:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_3:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_4:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_5:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_6:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_7:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_8:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_9:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_10:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_11:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_12:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_13:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_14:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_15:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_16:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_17:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_18:
+        ship: vm93
+        volumes_from: [forwarder_93]
+        command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
+      scrapy_guba_redis_detail_93_19:
         ship: vm93
         volumes_from: [forwarder_93]
         command: "scrapy crawl guba_stock_detail_realtime_redis_spider --loglevel=INFO --logfile=/tmp/feeds/detail.log"
