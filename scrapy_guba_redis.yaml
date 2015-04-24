@@ -21,6 +21,7 @@ services:
           mongodb1:
             exposed: 27020
             external: 27020
+        command: /mongodb/start_rs_94_27020_27020.sh
       mongodb_rs_94_27020_27021:
         ship: vm94
         volumes:
@@ -31,6 +32,7 @@ services:
           mongodb1:
             exposed: 27021
             external: 27021
+        command: /mongodb/start_rs_94_27020_27021.sh
       mongodb_rs_95_27020_27020:
         ship: vm95
         volumes:
@@ -41,6 +43,7 @@ services:
           mongodb1:
             exposed: 27020
             external: 27020
+        command: /mongodb/start_rs_95_27020_27020.sh
       mongodb_rs_95_27020_27021:
         ship: vm95
         volumes:
@@ -51,6 +54,7 @@ services:
           mongodb1:
             exposed: 27021
             external: 27021
+        command: /mongodb/start_rs_95_27020_27021.sh
 
   elasticsearch:
     image: denibertovic/elasticsearch
