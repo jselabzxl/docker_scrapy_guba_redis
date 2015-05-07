@@ -14,9 +14,9 @@ services:
       mongodb_rs_94_27020_27020:
         ship: vm94
         volumes:
-          /var/log/mongodb/:/var/log/scrapy_guba_mongodb/
-          /mongodb/:/home/docker/docker-mongodb-replica-set/bin/
-          /data/db/:/var/lib/scrapy_guba_mongodb/
+          /var/log/mongodb/: /var/log/scrapy_guba_mongodb/
+          /mongodb/: /home/docker/docker-mongodb-replica-set/bin/
+          /data/db/: /var/lib/scrapy_guba_mongodb/
         ports:
           mongodb1:
             exposed: 27020
@@ -25,9 +25,9 @@ services:
       mongodb_rs_94_27020_27021:
         ship: vm94
         volumes:
-          /var/log/mongodb/:/var/log/scrapy_guba_mongodb/
-          /mongodb/:/home/docker/docker-mongodb-replica-set/bin/
-          /data/db/:/var/lib/scrapy_guba_mongodb/
+          /var/log/mongodb/: /var/log/scrapy_guba_mongodb/
+          /mongodb/: /home/docker/docker-mongodb-replica-set/bin/
+          /data/db/: /var/lib/scrapy_guba_mongodb/
         ports:
           mongodb1:
             exposed: 27021
@@ -36,9 +36,9 @@ services:
       mongodb_rs_95_27020_27020:
         ship: vm95
         volumes:
-          /var/log/mongodb/:/var/log/scrapy_guba_mongodb/
-          /mongodb/:/home/docker/docker-mongodb-replica-set/bin/
-          /data/db/:/var/lib/scrapy_guba_mongodb/
+          /var/log/mongodb/: /var/log/scrapy_guba_mongodb/
+          /mongodb/: /home/docker/docker-mongodb-replica-set/bin/
+          /data/db/: /var/lib/scrapy_guba_mongodb/
         ports:
           mongodb1:
             exposed: 27020
@@ -47,9 +47,9 @@ services:
       mongodb_rs_95_27020_27021:
         ship: vm95
         volumes:
-          /var/log/mongodb/:/var/log/scrapy_guba_mongodb/
-          /mongodb/:/home/docker/docker-mongodb-replica-set/bin/
-          /data/db/:/var/lib/scrapy_guba_mongodb/
+          /var/log/mongodb/: /var/log/scrapy_guba_mongodb/
+          /mongodb/: /home/docker/docker-mongodb-replica-set/bin/
+          /data/db/: /var/lib/scrapy_guba_mongodb/
         ports:
           mongodb1:
             exposed: 27021
