@@ -1,11 +1,11 @@
 name: test
 
 ships:
-  vm91: {ip: 219.224.135.91, docker_port: 2375}
-  vm92: {ip: 219.224.135.92, docker_port: 2375}
-  vm93: {ip: 219.224.135.93, docker_port: 2375}
-  vm94: {ip: 219.224.135.94, docker_port: 2375}
-  vm95: {ip: 219.224.135.95, docker_port: 2375}
+  vm91: {ip: 172.17.13.204, docker_port: 2375}
+  vm92: {ip: 172.17.13.205, docker_port: 2375}
+  vm93: {ip: 172.17.13.206, docker_port: 2375}
+  vm94: {ip: 172.17.13.207, docker_port: 2375}
+  vm95: {ip: 172.17.13.208, docker_port: 2375}
 
 services:
   mongodb:
