@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y gcc make python-dev python-setuptools g
 
 RUN apt-get install libxml2 libxml2-dev libxslt-dev libxslt1-dev
 RUN easy_install pip
-RUN apt-get install python-lxml openssl
+RUN apt-get install python-lxml
+RUN apt-get install openssl
 RUN apt-get install libffi-dev
 RUN apt-get install -y libssl-dev
 RUN easy_install pyOpenSSL 
